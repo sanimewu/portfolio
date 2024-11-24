@@ -12,21 +12,26 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
 import { provideHttpClient } from '@angular/common/http';
 import {NzButtonComponent} from 'ng-zorro-antd/button';
 import {NzModalModule} from 'ng-zorro-antd/modal';
-import { PortfolioComponent } from './portfolio/portfolio.component';
+import { HomepageComponent } from './homepage/homepage.component';
+import { TopHeaderComponent } from './homepage/top-header/top-header.component';
+import {NzMenuDirective, NzSubMenuComponent} from 'ng-zorro-antd/menu';
 
 registerLocaleData(en);
 
 @NgModule({
   declarations: [
     AppComponent,
-    PortfolioComponent,
+    HomepageComponent,
+    TopHeaderComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     NzButtonComponent,
-    NzModalModule
+    NzModalModule,
+    NzMenuDirective,
+    NzSubMenuComponent
   ],
   providers: [
     provideClientHydration(),
