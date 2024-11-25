@@ -1,8 +1,17 @@
-<ul nz-menu nzMode="horizontal">
-  <li nz-submenu nzPlacement="topRight" nzTitle="Home">
-  <li nz-submenu nzPlacement="topRight" nzTitle="Blog">
-  <li nz-submenu nzPlacement="topRight" nzTitle="Experience">
-  <li nz-submenu nzPlacement="topRight" nzTitle="Skill">
-  <li nz-submenu nzPlacement="topRight" nzTitle="Achievement">
-  <li nz-submenu nzPlacement="topRight" nzTitle="Contact">
-</ul>
+<div class="">
+  <div class="">
+    <nav class="flex items-center justify-between">
+      <div class="text-2xl text-[#12F7D6] font-bold">
+        {{logoName}}
+      </div>
+      <ul class="flex space-x-4 text-md [&_div:hover:text-gray-300]">
+        <li><a routerLink="/" routerLinkActive="text-[#12F7D6]" [routerLinkActiveOptions]="{ exact: true }">Home</a></li>
+        <li><a routerLink="/blog">Blog</a></li>
+        <li><a routerLink="/projects">Projects</a></li>
+        <li><a routerLink="/achievement">Achievement</a></li>
+        <li><a routerLink="/contact">Contact</a></li>
+      </ul>
+
+    </nav>
+  </div>
+</div>
