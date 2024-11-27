@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class TopHeaderComponent {
   logoName:string = "</C> SanimHossain";
+  isNavbarOpen: boolean = false;
+
+  toggleNavbar(): void {
+    this.isNavbarOpen = !this.isNavbarOpen;
+  }
 }
