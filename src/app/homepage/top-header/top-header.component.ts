@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrl: './top-header.component.scss'
 })
 export class TopHeaderComponent {
-  logoName:string = "</C> SanimHossain";
+  logoName:string = "Md. Sanim Hossain";
   isNavbarOpen: boolean = false;
 
   toggleNavbar(): void {
