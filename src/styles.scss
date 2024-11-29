@@ -4,22 +4,10 @@
 @tailwind utilities;
 
 @layer base {
-  @font-face {
-    font-family: 'bengali-font';
-    src: url('../public/font/NotoSansBengali.ttf') format('truetype');
-  }
-
-  @font-face {
-    font-family: 'english-font';
-    src: url('../public/font/Lexend.ttf') format('truetype');
-  }
-
-  html {
-    font-family: english-font, bengali-font, sans-serif;
-  }
-
   ul li a:hover{
     color: #12F7D6;
+    transform: scale(1.5);
+    transition-duration: 150ms;
   }
 }
 

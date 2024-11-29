@@ -5,7 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NZ_I18N } from 'ng-zorro-antd/i18n';
 import { en_US } from 'ng-zorro-antd/i18n';
-import { registerLocaleData } from '@angular/common';
+import {NgOptimizedImage, registerLocaleData} from '@angular/common';
 import en from '@angular/common/locales/en';
 import { FormsModule } from '@angular/forms';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
@@ -15,6 +15,8 @@ import {NzModalModule} from 'ng-zorro-antd/modal';
 import { HomepageComponent } from './homepage/homepage.component';
 import { TopHeaderComponent } from './homepage/top-header/top-header.component';
 import {NzMenuDirective, NzSubMenuComponent} from 'ng-zorro-antd/menu';
+import { PersonalIntroComponent } from './homepage/personal-intro/personal-intro.component';
+import {NzDividerComponent} from 'ng-zorro-antd/divider';
 
 registerLocaleData(en);
 
@@ -23,6 +25,7 @@ registerLocaleData(en);
     AppComponent,
     HomepageComponent,
     TopHeaderComponent,
+    PersonalIntroComponent,
   ],
   imports: [
     BrowserModule,
@@ -31,7 +34,9 @@ registerLocaleData(en);
     NzButtonComponent,
     NzModalModule,
     NzMenuDirective,
-    NzSubMenuComponent
+    NzSubMenuComponent,
+    NzDividerComponent,
+    NgOptimizedImage
   ],
   providers: [
     provideClientHydration(),
