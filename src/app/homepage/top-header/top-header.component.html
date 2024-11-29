@@ -1,34 +1,32 @@
 <div>
   <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto py-4">
-    <div class="text-2xl text-[#12F7D6] font-bold">
+
+    <div class="text-2xl text-[#12F7D6] font-bold font-mono">
       {{logoName}}
     </div>
+
     <button (click)="toggleNavbar()" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100">
-      <span class="sr-only">Open main menu</span>
       <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
       </svg>
     </button>
+
     <div [class.hidden]="!isNavbarOpen" class="hidden fixed top-0 left-0 h-full w-1/2 md:block md:static md:w-auto bg-gray-700 md:bg-transparent flex-col items-start md:items-center justify-start md:justify-end z-50">
-      <ul class="[&_a]:py-10 font-medium flex flex-col p-5 md:p-0 rounded-lg  md:flex-row md:space-x-8 md:mt-0">
+
+      <button (click)="toggleNavbar()" [hidden]="!isNavbarOpen || screenIsMdOrLarger" class="float-right p-2" ><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+      </svg>
+      </button>
+
+      <ul class="font-medium text-md flex flex-col p-3 py-10 gap-1 md:py-0 md:p-5 md:flex-row md:space-x-8 md:mt-0">
         <li><a routerLink="/" routerLinkActive="text-[#12F7D6]" [routerLinkActiveOptions]="{ exact: true }">Home</a></li>
         <li><a routerLink="/blog">Blog</a></li>
         <li><a routerLink="/projects">Projects</a></li>
         <li><a routerLink="/achievement">Achievement</a></li>
         <li><a routerLink="/contact">Contact</a></li>
       </ul>
+
     </div>
   </div>
 </div>
-<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta ea eius ipsa magnam minus, mollitia obcaecati omnis
-  perferendis quos, soluta vel voluptatem. Dolorem ea id ipsam molestiae nulla, quod voluptatem. Lorem ipsum dolor sit
-  amet, consectetur adipisicing elit. Dicta ea eius ipsa magnam minus, mollitia obcaecati omnis perferendis quos, soluta
-  vel voluptatem. Dolorem ea id ipsam molestiae nulla, quod voluptatem. Lorem ipsum dolor sit amet, consectetur
-  adipisicing elit. Dicta ea eius ipsa magnam minus, mollitia obcaecati omnis perferendis quos, soluta vel voluptatem.
-  Dolorem ea id ipsam molestiae nulla, quod voluptatem.
-</div>
-<div>
-  গাজীপুরের চন্দ্রার বন্ধ হওয়া কারখানার বকেয়া বেতন-ভাতা ও বিভিন্ন পাওনার দাবিতে ঢাকা-টাঙ্গাইল মহাসড়ক অবরোধ করে বিক্ষোভ করছেন শ্রমিকেরা। আজ বৃহস্পতিবার সকাল ৯টার দিকে চন্দ্রা মোড় এলাকায় অবস্থান নিয়ে তাঁরা বিক্ষোভ করেন। এতে মহাসড়কের দুই পাশে যানবাহন চলাচল বন্ধ হয়ে যায়। যাত্রীরা ভোগান্তির মধ্যে পড়েন। বেলা সাড়ে ১১টায় শেষ খবর পাওয়া পর্যন্ত শ্রমিকদের বিক্ষোভ চলছিল।
 
-  শিল্প পুলিশ, বিক্ষুব্ধ শ্রমিক ও স্থানীয় সূত্রে জানা যায়, চন্দ্রা মোড় এলাকায় মাহামুদ জিন্স লিমিটেড নামে একটি কারখানা আছে। এ কারখানায় কাজ করতেন ৬০০ থেকে ৭০০ শ্রমিক। বিভিন্ন সংকটের কথা বলে কিছুদিন আগে কারখানাটি বন্ধ ঘোষণা করেছে মালিকপক্ষ। আজ সকালে শ্রমিকদের বকেয়া বেতন–ভাতাসহ অন্যান্য পাওনা পরিশোধ করার কথা ছিল। সে অনুযায়ী সকাল থেকেই কারখানাটির সামনে আসতে থাকেন শ্রমিকেরা। কিন্তু এর মধ্যেই শ্রমিকদের পাওনা আজ পরিশোধ করা হবে না জানিয়ে নোটিশ টাঙিয়ে দেয় কারখানা কর্তৃপক্ষ। এতে শ্রমিকেরা ক্ষুব্ধ হয়ে কারখানার সামনেই বিক্ষোভ শুরু করেন। পরে তাঁরা চন্দ্রা মোড়ে ঢাকা-
-</div>
