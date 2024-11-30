@@ -19,6 +19,7 @@ import { PersonalIntroComponent } from './homepage/personal-intro/personal-intro
 import {NzDividerComponent} from 'ng-zorro-antd/divider';
 import { EducationComponent } from './homepage/education/education.component';
 import { AchievementComponent } from './homepage/achievement/achievement.component';
+import { SkillExpericenceComponent } from './homepage/skill-expericence/skill-expericence.component';
 
 registerLocaleData(en);
 
@@ -30,6 +31,7 @@ registerLocaleData(en);
     PersonalIntroComponent,
     EducationComponent,
     AchievementComponent,
+    SkillExpericenceComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,7 +1,7 @@
-<div>
+<div class="fixed top-0 left-0 w-full bg-gray-800 shadow-lg z-50 bg-opacity-75">
   <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto py-4">
 
-    <div class="text-2xl text-[#12F7D6] font-bold font-mono">
+    <div class="text-2xl text-[#12F7D6] font-bold font-mono px-3">
       {{logoName}}
     </div>
 
@@ -11,20 +11,27 @@
       </svg>
     </button>
 
-    <div [class.hidden]="!isNavbarOpen" class="hidden fixed top-0 left-0 h-full w-1/2 md:block md:static md:w-auto bg-gray-700 md:bg-transparent flex-col items-start md:items-center justify-start md:justify-end z-50">
+    <div [class.hidden]="!isNavbarOpen" class="hidden fixed top-0 left-0 h-full w-1/2 md:block md:static md:w-auto bg-gray-700 md:bg-transparent flex-col items-start md:items-center justify-start md:justify-end z-50 opacity-90">
 
       <button (click)="toggleNavbar()" [hidden]="!isNavbarOpen || screenIsMdOrLarger" class="float-right p-2" ><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
         <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
       </svg>
       </button>
 
-      <ul class="font-medium text-md flex flex-col p-3 py-10 gap-1 md:py-0 md:p-5 md:flex-row md:space-x-8 md:mt-0">
-        <li><a routerLink="/" routerLinkActive="text-[#12F7D6]" [routerLinkActiveOptions]="{ exact: true }">Home</a></li>
+      <ul class="font-medium text-md flex flex-col p-2 py-10 gap-1 md:py-0 md:p-5 md:flex-row md:space-x-4 md:mt-0">
+        <li><a href="#header" routerLinkActive="text-[#12F7D6]" [routerLinkActiveOptions]="{ exact: true }">Home</a></li>
         <li><a href="#education">Education</a></li>
+        <li><a href="#skill">Skills</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#achievement">Achievement</a></li>
-        <li><a href="#/contact">Contact</a></li>
       </ul>
+
+      <div class="pl-3 space-x-2 space-y-2" [hidden]="!isNavbarOpen || screenIsMdOrLarger">
+        <span class="text-md text-[#98FAEC] font-mono font-bold">Let's Connected :</span><br>
+        <img ngSrc = "/img/Instagram.svg" (click)="copyToClipboard('https://www.instagram.com/hossainsanim/')" class="float-left" alt="Instagram" height="30" width="30" priority/>
+        <img ngSrc = "/img/facebook-logo.png" (click)="copyToClipboard('https://www.facebook.com/sanim.hossain.35/')" class="float-left" alt="Facebook" height="24" width="26"  priority/>
+        <img ngSrc = "/img/icon-linked-in.svg" (click)="copyToClipboard('https://www.linkedin.com/in/md-sanim-hossain')" class="float-left" alt="LinkIn" height="30" width="30" priority/>
+      </div>
 
     </div>
   </div>
