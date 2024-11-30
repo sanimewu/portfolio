@@ -21,7 +21,7 @@ export class TopHeaderComponent implements OnInit {
     this.checkScreenSize();
   }
   checkScreenSize(): void {
-    this.screenIsMdOrLarger = window.innerWidth >= 768; // `md` breakpoint in Tailwind (768px)
+    this.screenIsMdOrLarger = window.innerWidth >= 768;
   }
 
 }
