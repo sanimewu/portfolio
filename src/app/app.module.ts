@@ -17,6 +17,8 @@ import { TopHeaderComponent } from './homepage/top-header/top-header.component';
 import {NzMenuDirective, NzSubMenuComponent} from 'ng-zorro-antd/menu';
 import { PersonalIntroComponent } from './homepage/personal-intro/personal-intro.component';
 import {NzDividerComponent} from 'ng-zorro-antd/divider';
+import { EducationComponent } from './homepage/education/education.component';
+import { AchievementComponent } from './homepage/achievement/achievement.component';
 
 registerLocaleData(en);
 
@@ -26,6 +28,8 @@ registerLocaleData(en);
     HomepageComponent,
     TopHeaderComponent,
     PersonalIntroComponent,
+    EducationComponent,
+    AchievementComponent,
   ],
   imports: [
     BrowserModule,
