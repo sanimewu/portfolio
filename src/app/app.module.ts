@@ -21,6 +21,7 @@ import { EducationComponent } from './homepage/education/education.component';
 import { AchievementComponent } from './homepage/achievement/achievement.component';
 import { SkillExpericenceComponent } from './homepage/skill-expericence/skill-expericence.component';
 import { ProjectsComponent } from './homepage/projects/projects.component';
+import {NzImageDirective, NzImageGroupComponent, NzImageModule} from 'ng-zorro-antd/image';
 
 registerLocaleData(en);
 
@@ -44,7 +45,10 @@ registerLocaleData(en);
     NzMenuDirective,
     NzSubMenuComponent,
     NzDividerComponent,
-    NgOptimizedImage
+    NgOptimizedImage,
+    NzImageGroupComponent,
+    NzImageDirective,
+    NzImageModule
   ],
   providers: [
     provideClientHydration(),
