@@ -25,9 +25,30 @@
 <div class="flex flex-col items-center justify-center space-y-2">
   <div class="text-2xl text-[#98FAEC] font-mono font-bold">Connect With Me</div>
   <div class="flex gap-3 pb-10">
-    <img class="cursor-pointer hover:scale-125 transform transition duration-20" ngSrc = "/img/icon-mail.svg" alt="Email" height="28" width="30" (click)="copyToClipboard('sanimhossain2001@gmail.com')">
-    <img class="cursor-pointer hover:scale-125 transform transition duration-20" ngSrc = "/img/github.svg" alt="Github" height="30" width="30" (click)="copyToClipboard('https://github.com/sanim2001')">
-    <img class="cursor-pointer hover:scale-125 transform transition duration-20" ngSrc = "/img/icon-linked-in.svg" alt="LinkIn" height="30" width="30" (click)="copyToClipboard('https://www.linkedin.com/in/md-sanim-hossain')">
+    <a href="https://www.gmail.com" target="_blank">
+      <img class="cursor-pointer hover:scale-125 transform transition duration-200"
+           ngSrc="/img/icon-mail.svg"
+           alt="Email"
+           height="28"
+           width="30">
+    </a>
+
+    <a href="https://github.com/sanim2001" target="_blank">
+      <img class="cursor-pointer hover:scale-125 transform transition duration-200"
+           ngSrc="/img/github.svg"
+           alt="Github"
+           height="30"
+           width="30">
+    </a>
+
+    <a href="https://www.linkedin.com/in/md-sanim-hossain" target="_blank">
+      <img class="cursor-pointer hover:scale-125 transform transition duration-200"
+           ngSrc="/img/icon-linked-in.svg"
+           alt="LinkedIn"
+           height="30"
+           width="30">
+    </a>
+
     <button class="px-4 py-1 text-black font-medium bg-[#12F7D6] rounded-lg hover:scale-105 transform transition duration-20" (click)="downloadCV()">Download My CV</button>
   </div>
 </div>

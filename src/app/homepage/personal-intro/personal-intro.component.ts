@@ -7,15 +7,9 @@ import {NzMessageService} from 'ng-zorro-antd/message';
   styleUrl: './personal-intro.component.scss'
 })
 export class PersonalIntroComponent {
-  constructor(private message: NzMessageService) {
+  constructor() {
   }
-  copyToClipboard(text: string): void {
-    navigator.clipboard.writeText(text).then(() => {
-      this.message.success('Link copied to clipboard!');
-    }).catch(err => {
-      this.message.error('Failed to copy: ', err);
-    });
-  }
+
   downloadCV(): void {
     const link = document.createElement('a');
     link.href = '/documents/Sanim_HossainCV.pdf';

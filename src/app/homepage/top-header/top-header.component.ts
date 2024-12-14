@@ -10,8 +10,7 @@ export class TopHeaderComponent implements OnInit {
   logoName:string = "Md.Sanim Hossain";
   isNavbarOpen: boolean = false;
   screenIsMdOrLarger: boolean = false;
-
-  constructor(private message: NzMessageService) {
+  constructor() {
   }
   toggleNavbar(): void {
     this.isNavbarOpen = !this.isNavbarOpen;
@@ -25,14 +24,6 @@ export class TopHeaderComponent implements OnInit {
   }
   checkScreenSize(): void {
     this.screenIsMdOrLarger = window.innerWidth >= 768;
-  }
-
-  copyToClipboard(text: string): void {
-    navigator.clipboard.writeText(text).then(() => {
-      this.message.success('Link copied to clipboard!');
-    }).catch(err => {
-      this.message.error('Failed to copy: ', err);
-    });
   }
 
 }
