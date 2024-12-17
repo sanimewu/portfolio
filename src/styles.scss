@@ -21,3 +21,16 @@
   }
 
 }
+@keyframes zoomIn {
+  0% {
+    transform: scale(0.97);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.zoom-on-reload {
+  animation: zoomIn 2s ease-in-out;
+  transform-origin: center;
+}

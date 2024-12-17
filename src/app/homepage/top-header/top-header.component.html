@@ -11,7 +11,7 @@
       </svg>
     </button>
 
-    <div [class.hidden]="!isNavbarOpen" class="hidden fixed top-0 left-0 h-full w-1/2 md:block md:static md:w-auto bg-gray-700 md:bg-transparent flex-col items-start md:items-center justify-start md:justify-end z-50 opacity-90">
+    <div [@openCloseNavbar]="!isNavbarOpen ? 'open' : 'closed'"  [class.hidden]="!isNavbarOpen" class="hidden fixed top-0 left-0 h-full w-1/2 md:block md:static md:w-auto bg-gray-700 md:bg-transparent flex-col items-start md:items-center justify-start md:justify-end z-50 opacity-90">
 
       <button (click)="toggleNavbar()" [hidden]="!isNavbarOpen || screenIsMdOrLarger" class="float-right p-2" ><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
         <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
@@ -24,6 +24,7 @@
         <li><a href="#skill">Skills</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#achievement">Achievement</a></li>
+        <li><a href="#blog">Blog</a></li>
       </ul>
 
       <div class="p-2 space-y-2" [hidden]="!isNavbarOpen || screenIsMdOrLarger">

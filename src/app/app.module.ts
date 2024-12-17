@@ -22,6 +22,8 @@ import { AchievementComponent } from './homepage/achievement/achievement.compone
 import { SkillExpericenceComponent } from './homepage/skill-expericence/skill-expericence.component';
 import { ProjectsComponent } from './homepage/projects/projects.component';
 import {NzImageDirective, NzImageGroupComponent, NzImageModule} from 'ng-zorro-antd/image';
+import {BlogComponent} from "./homepage/blog/blog.component";
+import {ScrollAnimateDirective} from './homepage/scroll-animate.directive';
 
 registerLocaleData(en);
 
@@ -48,7 +50,9 @@ registerLocaleData(en);
     NgOptimizedImage,
     NzImageGroupComponent,
     NzImageDirective,
-    NzImageModule
+    NzImageModule,
+    BlogComponent,
+    ScrollAnimateDirective
   ],
   providers: [
     provideClientHydration(),
