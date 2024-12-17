@@ -12,7 +12,7 @@ export class PersonalIntroComponent {
 
   downloadCV(): void {
     const link = document.createElement('a');
-    link.href = '/documents/Sanim_HossainCV.pdf';
+    link.href = '/Sanim_HossainCV.pdf';
     link.download = 'Sanim_Hossain_CV.pdf';
     link.click();
   }
