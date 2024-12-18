@@ -6,21 +6,6 @@ import {animate, state, style, transition, trigger} from '@angular/animations';
   selector: 'app-top-header',
   templateUrl: './top-header.component.html',
   styleUrl: './top-header.component.scss',
-  animations: [
-    trigger('openCloseNavbar', [
-      state('closed', style({
-        transform: 'translateX(0)',
-        opacity: 1,
-        display: 'block',
-      })),
-      state('open', style({
-        transform: 'translateX(-100%)',
-        opacity: 0,
-        display: 'none',
-      })),
-      transition('open <=> closed', animate('500ms ease-in-out')),
-    ])
-  ]
 })
 export class TopHeaderComponent implements OnInit {
   logoName:string = "Md.Sanim Hossain";
