@@ -42,5 +42,11 @@ export class TopHeaderComponent implements OnInit {
     this.screenIsMdOrLarger = window.innerWidth >= 768;
     this.isNavbarOpen = this.screenIsMdOrLarger;
   }
+  navbarClose(){
+    this.screenIsMdOrLarger = window.innerWidth >= 768;
+    if(!this.screenIsMdOrLarger){
+      this.isNavbarOpen = false;
+    }
+  }
 
 }

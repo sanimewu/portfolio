@@ -29,7 +29,7 @@ export class ProjectsComponent {
       using: 'Using Java Swing ',
       description: 'The program includes text fields for\n' +
         ' entering details, a button to add information, and a display area to showcase the entered data. Deals with the\n' +
-        ' maintenance of admin, Client, and Product information within the Company.',
+        ' information within the Company.',
       link: 'https://github.com/sanim2001/It_management_system',
       live: '',
     },

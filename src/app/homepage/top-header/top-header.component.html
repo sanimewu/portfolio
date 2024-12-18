@@ -18,17 +18,17 @@
       </svg>
       </button>
 
-      <ul class="font-medium text-md flex flex-col p-2 py-10 gap-1 md:py-0 md:p-5 md:flex-row md:space-x-4 md:mt-0">
-        <li><a href="#header" routerLinkActive="text-[#12F7D6]" [routerLinkActiveOptions]="{ exact: true }">Home</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#skill">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#achievement">Achievement</a></li>
-        <li><a href="#blog">Blog</a></li>
+      <ul class="font-medium text-xs lg:text-sm flex flex-col p-2 py-10 gap-1 md:py-0 md:p-5 md:flex-row md:space-x-4 md:mt-0">
+        <li><a href="#header" routerLinkActive="text-[#12F7D6]" [routerLinkActiveOptions]="{ exact: true }" (click)="navbarClose()">Home</a></li>
+        <li><a href="#education" (click)="navbarClose()">Education</a></li>
+        <li><a href="#skill" (click)="navbarClose()">Skills</a></li>
+        <li><a href="#projects" (click)="navbarClose()">Projects</a></li>
+        <li><a href="#achievement" (click)="navbarClose()">Achievement</a></li>
+        <li><a href="#blog" (click)="navbarClose()">Blog</a></li>
       </ul>
 
-      <div class="p-2 space-y-2" [hidden]="!isNavbarOpen || screenIsMdOrLarger">
-        <span class="text-md text-[#98FAEC] font-mono font-bold py-2">Contact Me :</span><br>
+      <div class="text-sm p-2 space-y-2" [hidden]="!isNavbarOpen || screenIsMdOrLarger">
+        <span class="text-[#98FAEC] font-mono font-bold">Contact Me :</span><br><br>
         <span>+8801775962333</span><br>
         <span>Badda, Dhaka -1212</span>
       </div>
