@@ -24,6 +24,7 @@ import { ProjectsComponent } from './homepage/projects/projects.component';
 import {NzImageDirective, NzImageGroupComponent, NzImageModule} from 'ng-zorro-antd/image';
 import {BlogComponent} from "./homepage/blog/blog.component";
 import {ScrollAnimateDirective} from './homepage/scroll-animate.directive';
+import {ScrollDownDirective} from './homepage/scroll-down.directive';
 
 registerLocaleData(en);
 
@@ -52,7 +53,8 @@ registerLocaleData(en);
     NzImageDirective,
     NzImageModule,
     BlogComponent,
-    ScrollAnimateDirective
+    ScrollAnimateDirective,
+    ScrollDownDirective
   ],
   providers: [
     provideClientHydration(),
