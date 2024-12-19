@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule, provideClientHydration } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NZ_I18N } from 'ng-zorro-antd/i18n';
@@ -19,7 +18,7 @@ import { PersonalIntroComponent } from './homepage/personal-intro/personal-intro
 import {NzDividerComponent} from 'ng-zorro-antd/divider';
 import { EducationComponent } from './homepage/education/education.component';
 import { AchievementComponent } from './homepage/achievement/achievement.component';
-import { SkillExpericenceComponent } from './homepage/skill-expericence/skill-expericence.component';
+import {SkillExperienceComponent} from './homepage/skill-experience/skill-expericence.component';
 import { ProjectsComponent } from './homepage/projects/projects.component';
 import {NzImageDirective, NzImageGroupComponent, NzImageModule} from 'ng-zorro-antd/image';
 import {BlogComponent} from "./homepage/blog/blog.component";
@@ -36,8 +35,8 @@ registerLocaleData(en);
     PersonalIntroComponent,
     EducationComponent,
     AchievementComponent,
-    SkillExpericenceComponent,
     ProjectsComponent,
+    SkillExperienceComponent,
   ],
   imports: [
     BrowserModule,

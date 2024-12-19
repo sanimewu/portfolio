@@ -1,11 +1,11 @@
 <div class="fixed top-0 left-0 w-full bg-gray-800 shadow-lg z-50 bg-opacity-75">
   <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto py-4">
 
-    <div class="text-2xl text-[#12F7D6] font-bold font-mono px-3">
+    <div class="text-xl md:text-2xl text-[#12F7D6] font-bold px-3">
       {{logoName}}
     </div>
 
-    <button (click)="toggleNavbar()" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100">
+    <button (click)="toggleNavbar()" class="mr-2 inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-white rounded-lg md:hidden hover:bg-gray-500">
       <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
       </svg>
@@ -18,7 +18,7 @@
       </svg>
       </button>
 
-      <ul class="font-medium text-xs lg:text-sm flex flex-col p-2 py-10 gap-1 md:py-0 md:p-5 md:flex-row md:space-x-4 md:mt-0">
+      <ul class="font-medium text-sm flex flex-col p-4 py-10 gap-1 md:py-0 md:p-5 md:flex-row md:space-x-3 md:mt-0">
         <li><a href="#header" routerLinkActive="text-[#12F7D6]" [routerLinkActiveOptions]="{ exact: true }" (click)="navbarClose()">Home</a></li>
         <li><a href="#education" (click)="navbarClose()">Education</a></li>
         <li><a href="#skill" (click)="navbarClose()">Skills</a></li>
@@ -27,10 +27,10 @@
         <li><a href="#blog" (click)="navbarClose()">Blog</a></li>
       </ul>
 
-      <div class="text-sm p-2 space-y-2" [hidden]="!isNavbarOpen || screenIsMdOrLarger">
-        <span class="text-[#98FAEC] font-mono font-bold">Contact Me :</span><br><br>
-        <span>+8801775962333</span><br>
-        <span>Badda, Dhaka -1212</span>
+      <div class="text-sm p-4 space-y-1" [hidden]="!isNavbarOpen || screenIsMdOrLarger">
+        <div class="underline text-[#98FAEC] font-bold py-1">Contact Me :</div>
+        <div>+8801775962333</div>
+        <div>Badda, Dhaka -1212</div>
       </div>
 
     </div>

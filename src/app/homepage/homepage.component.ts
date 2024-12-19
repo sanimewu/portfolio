@@ -7,7 +7,6 @@ import {Component, HostListener, OnInit} from '@angular/core';
 })
 export class HomepageComponent implements OnInit {
   isScreenLg: boolean = false;
-
   ngOnInit(): void {
     this.checkScreenSize();
   }

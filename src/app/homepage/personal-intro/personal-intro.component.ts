@@ -1,12 +1,11 @@
-import { Component } from '@angular/core';
-import {NzMessageService} from 'ng-zorro-antd/message';
+import {Component} from '@angular/core';
 
 @Component({
   selector: 'app-personal-intro',
   templateUrl: './personal-intro.component.html',
   styleUrl: './personal-intro.component.scss'
 })
-export class PersonalIntroComponent {
+export class PersonalIntroComponent{
   constructor() {
   }
 
