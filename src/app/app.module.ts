@@ -18,7 +18,7 @@ import { PersonalIntroComponent } from './homepage/personal-intro/personal-intro
 import {NzDividerComponent} from 'ng-zorro-antd/divider';
 import { EducationComponent } from './homepage/education/education.component';
 import { AchievementComponent } from './homepage/achievement/achievement.component';
-import {SkillExperienceComponent} from './homepage/skill-experience/skill-expericence.component';
+import {SkillExperienceComponent} from './homepage/skill-experience/skill-experience.component';
 import { ProjectsComponent } from './homepage/projects/projects.component';
 import {NzImageDirective, NzImageGroupComponent, NzImageModule} from 'ng-zorro-antd/image';
 import {BlogComponent} from "./homepage/blog/blog.component";

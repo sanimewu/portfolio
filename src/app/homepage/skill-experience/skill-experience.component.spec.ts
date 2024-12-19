@@ -1,5 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import {SkillExperienceComponent} from './skill-expericence.component';
+import {SkillExperienceComponent} from './skill-experience.component';
 
 
 
